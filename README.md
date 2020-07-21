@@ -18,7 +18,7 @@ A Linux or OsX computer with 10GB of RAM available and the following software in
 
 Once you have all the software installed, you can clone this repository using the following command:
 
-``` git clone git@github.com:spinoshi/iac_sandbox.git ```
+``` git clone https://github.com/spinoshi/iac_sandbox.git ```
 
 If you step into the newly created directory you will find this:
 
