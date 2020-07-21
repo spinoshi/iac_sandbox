@@ -84,7 +84,7 @@ We will use terraform to spin up 2 VMs on our Openstack cloud platform.
 
 Our working directory will be:
 ```
-mkdir OS_Terraform && cd !$
+mkdir OS_Terraform && cd OS_Terraform
 ```
 First we need to configure terraform provider to access openstack (copy and paste  into your shell and then press CTRL-D):
 ```
