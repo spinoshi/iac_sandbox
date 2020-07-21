@@ -86,13 +86,12 @@ Our working directory will be:
 ```
 mkdir OS_Terraform && cd OS_Terraform
 ```
-First we need to configure terraform provider to access openstack (copy and paste  into your shell and then press CTRL-D):
+First we need to configure terraform provider to access openstack:
 ```
 $ cat > provider.tf
 ``` 
-
+(copy and paste  into your shell and then press CTRL-D)
 ```
-### copy this: vvvvvvv
 provider "openstack" {
   user_name   = "admin"
   tenant_name = "admin"
@@ -136,7 +135,7 @@ At this point we can create some initial resources (SSH keypairs and Network):
 ```
 $ cat > main.tf
 ``` 
-
+(copy and paste  into your shell and then press CTRL-D)
 ```
 ### copy this: vvvvvvv
 resource "openstack_compute_keypair_v2" "my_first_keypair" {
