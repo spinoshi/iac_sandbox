@@ -89,7 +89,9 @@ mkdir OS_Terraform && cd OS_Terraform
 First we need to configure terraform provider to access openstack (copy and paste  into your shell and then press CTRL-D):
 ```
 $ cat > provider.tf
-``` ```
+``` 
+
+```
 ### copy this: vvvvvvv
 provider "openstack" {
   user_name   = "admin"
@@ -133,7 +135,9 @@ commands will detect it and remind you to do so if necessary.
 At this point we can create some initial resources (SSH keypairs and Network):
 ```
 $ cat > main.tf
-``` ```
+``` 
+
+```
 ### copy this: vvvvvvv
 resource "openstack_compute_keypair_v2" "my_first_keypair" {
 name = "my_first_keypair"
