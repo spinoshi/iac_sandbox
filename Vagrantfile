@@ -27,7 +27,7 @@ Vagrant.configure("2") do |config|
     controller.vm.provision 'shell', inline: "fallocate -l 1G /swapfile && chmod 600 /swapfile && mkswap /swapfile && swapon /swapfile"
     controller.vm.provision 'shell', inline: "echo '/swapfile  swap swap  sw  0  0 '>> /etc/fstab"
     controller.vm.provision 'shell', inline: "sudo snap install microstack --classic --beta"
-    controller.vm.provision 'shell', inline: "sudo microstack.init --auto"
+    controller.vm.provision 'shell', inline: "sudo microstack.init --auto --control"
   end
 
 
